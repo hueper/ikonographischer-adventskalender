@@ -10,9 +10,17 @@
             let innerHTML = `
                 <h2>${key}</h2>
                 <img src="${artwork.image_url}" alt="${artwork.alt_text}">
-                <p><a target="__blank" href="${artwork.artist_link}">${artwork.artist}</a>, <em>${artwork.title}</em>, ${artwork.medium}, ${artwork.year}</p>
+                <div class="paratext">
+                    <p class="artist">
+                        <a target="__blank" href="${artwork.artist_link}">${artwork.artist}</a>
+                    </p>
+                    <p class="title_and_year">
+                        <em>${artwork.title}</em>, ${artwork.year}<br/>
+                    </p>
+                    <span class="medium">${artwork.medium}</span>
             `;
-            innerHTML += artwork.link ? `<a href="${artwork.link}">${artwork.link}</a>` : '';
+            innerHTML += artwork.link ? `<p class="linkContainer"><a href="${artwork.link}">${artwork.link}</a></p>` : '';
+            innerHTML += `</div>`;
             innerHTML += artwork.license ? `<p class="license">${artwork.license}</p>` : '';
 
             div.innerHTML = innerHTML;
