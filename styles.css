@@ -1,7 +1,32 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Arial", sans-serif;
     margin: 20px;
     background-color: #ccc;
+    letter-spacing: 0.02rem;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px dotted #444;
+    color: #222;
+}
+
+
+h1, h2{
+    font-weight: normal;
+}
+
+h2{
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+}
+
+hr {
+    width: 30%;
+    margin: 2rem auto;
+    border: none;
+    border-top: 1px solid #bbb;
 }
 
 .gallery {
@@ -12,26 +37,24 @@ body {
 
 .artwork {
     border: 1px solid #bbb;
-    border-radius: 1px;
+    border-radius: 3px;
     padding: 10px;
     width: 300px;
-    text-align: center;
+    text-align: left;
 }
 
 .artwork img {
     max-width: 100%;
-    border-radius: 5px;
-}
-
-.artwork h3 {
-    margin: 10px 0 5px;
+    border-radius: 3px;
 }
 
 .artwork p {
     margin: 5px 0;
 }
+div.paratext{
+    padding-top: 0.8rem;
+}
 
-.license{
-    font-family: 'Courier New', Courier, monospace;
+p.license{
     font-size: 0.8rem;
 }

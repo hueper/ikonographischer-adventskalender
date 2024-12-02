@@ -17,11 +17,11 @@
                     <p class="title_and_year">
                         <em>${artwork.title}</em>, ${artwork.year}<br/>
                     </p>
-                    <span class="medium">${artwork.medium}</span>
+                    <p class="medium">${artwork.medium}</p>
             `;
             innerHTML += artwork.link ? `<p class="linkContainer"><a href="${artwork.link}">${artwork.link}</a></p>` : '';
             innerHTML += `</div>`;
-            innerHTML += artwork.license ? `<p class="license">${artwork.license}</p>` : '';
+            innerHTML += artwork.license ? `<hr/><p class="license">${artwork.license}</p>` : '';
 
             div.innerHTML = innerHTML;
             gallery.appendChild(div);
