@@ -55,6 +55,9 @@ div.paratext{
     padding-top: 0.8rem;
 }
 
-p.license{
+p.license, p.description{
     font-size: 0.8rem;
+}
+span.icon{
+    color: #444;
 }

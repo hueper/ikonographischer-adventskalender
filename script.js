@@ -22,6 +22,20 @@
             innerHTML += artwork.link ? `<p class="linkContainer"><a href="${artwork.link}">${artwork.link}</a></p>` : '';
             innerHTML += `</div>`;
             innerHTML += artwork.license ? `<hr/><p class="license">${artwork.license}</p>` : '';
+            
+            if (artwork.description) {
+                const descriptionText = artwork.description;
+                const words = descriptionText.split(' ');
+                const shortDescription = words.slice(0, 15).join(' ') + (words.length > 15 ? '...' : '');
+
+                innerHTML += `
+                    <hr/>
+                    <p class="description" style="cursor: pointer;" onclick="toggleDescription(event)">
+                        <span class="short">${shortDescription} <span class="icon">▼</span></span>
+                        <span class="full" style="display: none;">${descriptionText} <span class="icon">▲</span></span>
+                    </p>
+                `;
+            }
 
             div.innerHTML = innerHTML;
             gallery.appendChild(div);
@@ -29,3 +43,17 @@
     })
     .catch(error => console.error('Error loading artworks:', error));
 })();
+
+function toggleDescription(event) {
+    const descriptionElement = event.currentTarget;
+    const shortDescription = descriptionElement.querySelector('.short');
+    const fullDescription = descriptionElement.querySelector('.full');
+
+    if (fullDescription.style.display === 'none') {
+        fullDescription.style.display = 'inline';
+        shortDescription.style.display = 'none';
+    } else {
+        fullDescription.style.display = 'none';
+        shortDescription.style.display = 'inline';
+    }
+}
