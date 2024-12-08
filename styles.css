@@ -76,7 +76,14 @@ span.icon{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 48px;  /* Adjust the size of the icon as needed */
-    color: white;    /* or any suitable color */
-    pointer-events: none; /* Ensures the icon doesn't capture click events */
+    font-size: 48px; 
+    color: white;
+    pointer-events: none;
+    z-index: 10;
 }
+@media screen and (max-width: 600px) {
+    .play-icon {
+        font-size: 36px;
+    }
+}
+
