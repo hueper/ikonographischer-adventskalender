@@ -63,9 +63,12 @@ span.icon{
     color: #444;
 }
 .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    display: inline-block;
 }
+
 
 .image-container img {
     display: block;
@@ -76,11 +79,14 @@ span.icon{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 48px; 
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    font-size: 48px;
     color: white;
     pointer-events: none;
     z-index: 10;
 }
+
 @media screen and (max-width: 600px) {
     .play-icon {
         font-size: 36px;
