@@ -74,6 +74,34 @@ span.icon{
     display: block;
 }
 
+.left-arrow, .right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10; /* Ensures the arrows sit above other elements */
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.left-arrow {
+    left: 10px; /* Position it to the left edge */
+}
+
+.right-arrow {
+    right: 10px; /* Position it to the right edge */
+}
+
+.image-container:hover .left-arrow,
+.image-container:hover .right-arrow {
+    opacity: 1; /* Show arrows when hovering over the image container */
+}
+
 .play-icon {
     position: absolute;
     top: 50%;

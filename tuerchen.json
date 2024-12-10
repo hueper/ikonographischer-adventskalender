@@ -1,4 +1,15 @@
 {
+  "Maria in der Hoffnung 2": {
+    "artist": "Paloma Varga Weisz",
+    "artist_link": "https://www.palomavargaweisz.com/",
+    "title": "Exhibition view",
+    "year": 2024,
+    "medium": "",
+    "alt_text": "",
+    "artwork_url": ["Paloma-weisz-Maria-in-der-Hoffnung-1.jpeg", "Paloma-weisz-Maria-in-der-Hoffnung-2.jpeg"],
+    "license": "© Moritz Hüper",
+    "description": ""
+  },
   "Die Stillung des Sturms": {
     "artist": "Carla Thonsgaard",
     "artist_link": "https://en.wikipedia.org/wiki/The_Carters",
