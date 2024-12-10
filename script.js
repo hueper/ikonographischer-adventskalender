@@ -16,10 +16,10 @@
             let innerHTML = `
                 <h2>${key}</h2>
                 <div class="image-container" style="position: relative; cursor: pointer;">
-                    ${artwork.link ? `<a href="${artwork.link}" target="_blank">` : ''}
+                    ${isYouTubeLink ? `<a href="${artwork.link}" target="_blank">` : ''}
                         <img src="${images[currentImageIndex]}" alt="${artwork.alt_text}" data-index="${currentImageIndex}" data-images='${JSON.stringify(images)}' style="width: 100%; display: block;">
                         ${isYouTubeLink ? `<div class="play-icon">▶</div>` : ''}
-                    ${artwork.link ? `</a>` : ''}
+                    ${isYouTubeLink ? `</a>` : ''}
                     ${Array.isArray(artwork.artwork_url) ? `<button class="left-arrow">&#9664;</button>` : ''}
                     ${Array.isArray(artwork.artwork_url) ? `<button class="right-arrow">&#9654;</button>` : ''}
                 </div>
