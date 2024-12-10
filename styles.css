@@ -1,7 +1,7 @@
 body {
-    font-family: "Arial", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     margin: 20px;
-    background-color: #ccc;
+    background-color: #ddd;
     letter-spacing: 0.02rem;
     color: #222;
 }
@@ -14,6 +14,11 @@ a {
 
 h1, h2 {
     font-weight: normal;
+    text-align: center;
+}
+
+h1{
+    letter-spacing: 0.05rem;
 }
 
 h2 {
@@ -30,14 +35,14 @@ hr {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 110px;
     justify-items: center;
     padding: 20px;
 }
 
 .artwork {
-    border: 1px solid #bbb;
+    
     border-radius: 3px;
     padding: 10px;
     text-align: left;
@@ -55,7 +60,7 @@ hr {
 
 div.paratext {
     padding-top: 0.8rem;
-    text-align: center;
+    text-align: left;
 }
 
 p.license, p.linkContainer, p.description {
@@ -143,4 +148,8 @@ span.icon {
 .overlay.show {
     visibility: visible;
     opacity: 1;
+}
+
+#impressum{
+    text-align: center;
 }
