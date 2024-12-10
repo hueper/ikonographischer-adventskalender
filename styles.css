@@ -12,12 +12,11 @@ a {
     color: #222;
 }
 
-
-h1, h2{
+h1, h2 {
     font-weight: normal;
 }
 
-h2{
+h2 {
     margin-top: 0.5rem;
     font-size: 1.3rem;
 }
@@ -30,38 +29,43 @@ hr {
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+    justify-items: center;
+    padding: 20px;
 }
 
 .artwork {
     border: 1px solid #bbb;
     border-radius: 3px;
     padding: 10px;
-    width: 300px;
     text-align: left;
 }
 
 .artwork img {
     max-width: 100%;
     border-radius: 3px;
+    display: block;
 }
 
 .artwork p {
     margin: 5px 0;
 }
-div.paratext{
+
+div.paratext {
     padding-top: 0.8rem;
+    text-align: center;
 }
 
-p.license, p.linkContainer, p.description{
+p.license, p.linkContainer, p.description {
     font-size: 0.8rem;
 }
 
-span.icon{
+span.icon {
     color: #444;
 }
+
 .image-container {
     display: flex;
     justify-content: center;
@@ -69,37 +73,32 @@ span.icon{
     position: relative;
 }
 
-
-.image-container img {
-    display: block;
-}
-
 .left-arrow, .right-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
     font-size: 20px;
-    z-index: 10; /* Ensures the arrows sit above other elements */
+    z-index: 10;
     opacity: 0.5;
     transition: opacity 0.3s ease;
 }
 
 .left-arrow {
-    left: 10px; /* Position it to the left edge */
+    left: 10px;
 }
 
 .right-arrow {
-    right: 10px; /* Position it to the right edge */
+    right: 10px;
 }
 
 .image-container:hover .left-arrow,
 .image-container:hover .right-arrow {
-    opacity: 1; /* Show arrows when hovering over the image container */
+    opacity: 1;
 }
 
 .play-icon {
@@ -107,8 +106,6 @@ span.icon{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
     font-size: 48px;
     color: white;
     pointer-events: none;
@@ -147,5 +144,3 @@ span.icon{
     visibility: visible;
     opacity: 1;
 }
-
-
