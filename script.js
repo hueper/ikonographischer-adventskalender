@@ -15,7 +15,7 @@
 
             let innerHTML = `
                 <h2>${key}</h2>
-                <div class="image-container" style="position: relative;">
+                <div class="image-container" style="position: relative; cursor: pointer;">
                     ${artwork.link ? `<a href="${artwork.link}" target="_blank">` : ''}
                         <img src="${images[currentImageIndex]}" alt="${artwork.alt_text}" data-index="${currentImageIndex}" data-images='${JSON.stringify(images)}' style="width: 100%; display: block;">
                         ${isYouTubeLink ? `<div class="play-icon">▶</div>` : ''}
@@ -54,11 +54,26 @@
             div.innerHTML = innerHTML;
             gallery.appendChild(div);
 
+            const imageContainer = div.querySelector('.image-container');
+            // Attach click event to the image container to enlarge image
+            imageContainer.addEventListener('click', event => {
+                // Ensure the target is the image to prevent enlarging when clicking on buttons
+                if (event.target.tagName.toLowerCase() === 'img') {
+                    enlargeImage(event);
+                }
+            });
+
             if (Array.isArray(artwork.artwork_url)) {
                 const leftArrow = div.querySelector('.left-arrow');
                 const rightArrow = div.querySelector('.right-arrow');
-                leftArrow.addEventListener('click', event => navigateImage(event, -1));
-                rightArrow.addEventListener('click', event => navigateImage(event, 1));
+                leftArrow.addEventListener('click', event => {
+                    event.stopPropagation();
+                    navigateImage(event, -1);
+                });
+                rightArrow.addEventListener('click', event => {
+                    event.stopPropagation();
+                    navigateImage(event, 1);
+                });
             }
         });
     })
@@ -89,4 +104,25 @@ function navigateImage(event, direction) {
     
     imgElement.src = images[currentIndex];
     imgElement.setAttribute('data-index', currentIndex);
+}
+
+function enlargeImage(event) {
+    let overlay = document.querySelector('.overlay');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.className = 'overlay';
+        overlay.addEventListener('click', () => {
+            overlay.classList.remove('show');
+        });
+        document.body.appendChild(overlay);
+    }
+
+    const imgElement = event.target;
+    const cloneImg = document.createElement('img');
+    cloneImg.src = imgElement.src;
+
+    overlay.innerHTML = '';
+    overlay.appendChild(cloneImg);
+
+    overlay.classList.add('show');
 }
