@@ -1,4 +1,15 @@
 {
+  "Letztes Abendmahl": {
+    "artist": "Renée Cox",
+    "artist_link": "https://www.reneecox.org/",
+    "title": "Yo Mama's Last Supper",
+    "year": 1996,
+    "medium": "Photography",
+    "alt_text": "",
+    "artwork_url": "https://static.wixstatic.com/media/a1fe9b_4edadc2a58c1488a8cf062d4457131ea.jpg/v1/fill/w_1138,h_241,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/a1fe9b_4edadc2a58c1488a8cf062d4457131ea.jpg",
+    "license": "© Renée Cox",
+    "description": "Aber am ersten Tag der Ungesäuerten Brote traten die Jünger zu Jesus und sprachen: Wo willst du, dass wir dir das Passalamm zum Essen bereiten? Er sprach: Geht hin in die Stadt zu einem und sprecht zu ihm: Der Meister lässt dir sagen: Meine Zeit ist nahe; ich will bei dir das Passamahl halten mit meinen Jüngern. Und die Jünger taten, wie ihnen Jesus befohlen hatte, und bereiteten das Passalamm. Und am Abend setzte er sich zu Tisch mit den Zwölfen. Und als sie aßen, sprach er: Wahrlich, ich sage euch: Einer unter euch wird mich verraten. Und sie wurden sehr betrübt und fingen an, jeder einzeln zu ihm zu sagen: Herr, bin ich's? Er antwortete und sprach: Der die Hand mit mir in die Schüssel taucht, der wird mich verraten. Der Menschensohn geht zwar dahin, wie von ihm geschrieben steht; doch weh dem Menschen, durch den der Menschensohn verraten wird! Es wäre für diesen Menschen besser, wenn er nie geboren wäre. Da antwortete Judas, der ihn verriet, und sprach: Bin ich's, Rabbi? Er sprach zu ihm: Du sagst es. Als sie aber aßen, nahm Jesus das Brot, dankte und brach's und gab's den Jüngern und sprach: Nehmet, esset; das ist mein Leib. Und er nahm den Kelch und dankte, gab ihnen den und sprach: Trinket alle daraus; das ist mein Blut des Bundes, das vergossen wird für viele zur Vergebung der Sünden. Ich sage euch: Ich werde von nun an nicht mehr von diesem Gewächs des Weinstocks trinken bis an den Tag, an dem ich aufs Neue davon trinken werde mit euch in meines Vaters Reich. Und als sie den Lobgesang gesungen hatten, gingen sie hinaus an den Ölberg. <a href='https://www.bibleserver.com/LUT/Matth%C3%A4us26,17' target='__blank'>Mt. 26 17-30</a>"
+  },
   "Maria in der Hoffnung 2": {
     "artist": "Paloma Varga Weisz",
     "artist_link": "https://www.palomavargaweisz.com/",
@@ -6,6 +17,7 @@
     "year": 2024,
     "medium": "",
     "alt_text": "",
+    "link": "https://kestnergesellschaft.de/de/ausstellung/99",
     "artwork_url": ["Paloma-weisz-Maria-in-der-Hoffnung-1.jpeg", "Paloma-weisz-Maria-in-der-Hoffnung-2.jpeg"],
     "license": "© Moritz Hüper",
     "description": ""
