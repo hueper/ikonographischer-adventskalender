@@ -1,4 +1,15 @@
 {
+  "Maria lactans": {
+    "artist": "Frida Kahlo",
+    "artist_link": "https://www.fridakahlo.org/my-nurse-and-i.jsp",
+    "title": "My Nurse and I",
+    "year": 1937,
+    "medium": "",
+    "alt_text": "",
+    "artwork_url": "https://www.fridakahlo.org/assets/img/paintings/my-nurse-and-i.jpg",
+    "license": "© Frida Kahlo",
+    "description": ""
+  },
   "Letztes Abendmahl": {
     "artist": "Renée Cox",
     "artist_link": "https://www.reneecox.org/",
