@@ -1,4 +1,18 @@
 {
+  "Pietà": {
+    "artist": "Claudette Johnson",
+    "artist_link": "https://en.wikipedia.org/wiki/Claudette_Johnson",
+    "title": "Pietà",
+    "year": 2024,
+    "medium": "Painting",
+    "alt_text": "",
+    "artwork_url": [
+      "https://pbs.twimg.com/media/GYjygibWoAANYWe.jpg",
+      "https://static.independent.co.uk/2024/09/25/09/Installation-view%2C-Claudette-Johnsons-presentation-in-Turner-Prize-2024-at-Tate-Britain-25-September.jpeg.jpg"
+    ],
+    "license": "© Claudette Johnson",
+    "description": "Die Pietà, die berühmteste Darstellung von Michelangelo als Skulptur der Maria, die den Leichnam Jesu nach der Kreuzigung wiegt, ist keine spezifische Szene, die in der Bibel beschrieben wird. Es handelt sich vielmehr um eine künstlerische und andächtige Interpretation, die auf der allgemeinen Passionsgeschichte basiert, insbesondere auf den Folgen der Kreuzigung Jesu.<br/>Johnsons Interpretation des klassischen Bildes wurde durch den Tod von <a href='https://en.wikipedia.org/wiki/Murder_of_George_Floyd' target='__blank'>George Floyd</a> im Jahr 2020 inspiriert und zeigt eine schwarze Mutter, die ihren sterbenden Sohn in den Armen hält, zusammen mit den Worten 'every mother was called when he called for his mother'."
+  },
   "Maria lactans": {
     "artist": "Frida Kahlo",
     "artist_link": "https://www.fridakahlo.org/my-nurse-and-i.jsp",
