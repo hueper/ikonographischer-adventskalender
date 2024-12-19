@@ -28,7 +28,7 @@
                         <a target="_blank" href="${artwork.artist_link}">${artwork.artist}</a>
                     </p>
                     <p class="title_and_year">
-                        <em>${artwork.title}</em>, ${artwork.year}<br/>
+                        <em>${artwork.title}</em>${artwork.title ? ', ' : ''}${artwork.year}<br/>
                     </p>
                     <p class="medium">${artwork.medium}</p>
             `;
