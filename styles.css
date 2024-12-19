@@ -82,16 +82,20 @@ span.icon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
+    background: linear-gradient(45deg, #e40303, #ff8c00, #ffed00, #008026, #750787);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
     border: none;
     padding: 10px;
     cursor: pointer;
     font-size: 20px;
     z-index: 10;
-    opacity: 0.5;
+    opacity: 0.8;
     transition: opacity 0.3s ease;
 }
+
 
 .left-arrow {
     left: 10px;
