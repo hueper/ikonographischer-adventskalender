@@ -1,4 +1,15 @@
 {
+  "Heilige Sippe": {
+    "artist": "Marisol Escobar",
+    "artist_link": "https://en.wikipedia.org/wiki/Marisol_Escobar",
+    "title": "The family",
+    "year": "1962",
+    "medium": "Paint and graphite on wood, sneakers, tinted plaster, door knob and plate, three sections",
+    "alt_text": "",
+    "artwork_url": ["https://www.moma.org/d/c/installation_images/W1siZiIsIjMzMDc5MyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg", "https://www.moma.org/media/W1siZiIsIjIxMDgwMCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg"],
+    "license": "© MoMA",
+    "description": ""
+  },
   "Rückkehr der Zweiundsiebzig": {
     "artist": "Lil Nas X",
     "artist_link": "https://en.wikipedia.org/wiki/Lil_Nas_X",
